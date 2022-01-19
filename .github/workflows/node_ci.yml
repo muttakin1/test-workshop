@@ -14,7 +14,7 @@ jobs:
       - run: npm install
       - run: npm test
       - uses: akhileshns/heroku-deploy@v3.8.8
-           with:
-             heroku_api_key: be3ec4df-26e9-45b6-ad9f-68244e59be8e
-             heroku_app_name: "workshop-test-app1"
-             heroku_email: "islammuttakin@live.com"
+        with:
+          heroku_api_key: be3ec4df-26e9-45b6-ad9f-68244e59be8e
+          heroku_app_name: "workshop-test-app1"
+          heroku_email: "islammuttakin@live.com"
