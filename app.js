@@ -21,6 +21,14 @@ const bodyParser = require('body-parser')
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 
+app.get("/", async (request, response) => {
+    try {
+        response.status(200).json("Hello world");
+    } catch (err) {
+        console.log(err);
+    }
+});
+
 app.post('/article/new', function (request, response) {
     var newArticle = new Article(request.body)
     newArticle.save(function (err, data) {
